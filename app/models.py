@@ -13,3 +13,6 @@ class User(models.Model):
     age = models.IntegerField()
     email = models.EmailField()
     role = models.ForeignKey(UserRole, on_delete=models.SET_NULL, null=True)
+
+    def __str__(self):
+        return self.name

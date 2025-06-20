@@ -17,4 +17,5 @@ from app.models import User, UserRole
 #    role = UserRole.objects.get(name = "user")
 #).save()
 
-
+user = User.objects.get(id=1)
+print(user)
